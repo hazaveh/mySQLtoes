@@ -17,7 +17,7 @@ define('DB_COL', 'id');
 define('DB_PORT', '3306');
 // Specify Elasticsearch Server Hostname
 //define('ES_HOST', 'localhost');
-$ES_HOST = array('localhosst:9200');
+$ES_HOST = array('localhost:9200');
 // Specify Elasticsearch index name.
 define('ES_INDEX', 'mysqltoes');
 // dividing large select * into:
