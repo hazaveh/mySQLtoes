@@ -10,6 +10,13 @@ at it's current state mySQLtoes only supports flat tables. this app should be la
 3. Automatically create fields based on columns name in your MySQL table.
 4. Batch inserting into elastic search, pagination queries. you can set a limit for each select and insert into ES.
 
+**Installation:**
+to use this script make sure you are having php >= 5.3 installed on your machine.
+
+ 1. Download and extract the tool.
+ 2. open config.php file and set the credentials of your elasticsearch and mysql database.
+ 3. execute run.php in command line.
+
 
 I'll be adding more functionalities such as custom mapping and ... to it in near future if I can manage my time.
 
