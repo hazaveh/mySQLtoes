@@ -9,7 +9,7 @@ require_once 'config.php';
 require_once 'medoo.min.php';
 require_once 'vendor/autoload.php';
 //require_once 'mappings.php';
-require_once 'classes.php';
+require_once 'mySQLtoes.php';
 
 
  ?>
