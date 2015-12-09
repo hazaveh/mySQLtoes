@@ -15,6 +15,7 @@ class convertAgent
     public $colors;
     public $resume;
     public $offset = 0;
+    public $logger;
 
 
     public function __construct()
@@ -55,7 +56,8 @@ class convertAgent
             $this->idCol = DB_COL;
         }
         global $ES_HOST;
-        $this->elasticSearch = \Elasticsearch\ClientBuilder::create()->setHosts($ES_HOST)->build();
+        $this->logger = \Elasticsearch\ClientBuilder::defaultLogger('mySQLtoes.log');
+        $this->elasticSearch = \Elasticsearch\ClientBuilder::create()->setLogger($this->logger)->setHosts($ES_HOST)->build();
     }
 
 
@@ -63,7 +65,7 @@ class convertAgent
     public function understand()
     {
         echo PHP_EOL . $this->colors->
-            getColoredString('mySQLtoes 1.0', 'green')
+            getColoredString('mySQLtoes 1.1', 'green')
             . PHP_EOL;
         sleep(1);
         echo $this->colors->
