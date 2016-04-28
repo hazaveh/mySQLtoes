@@ -1,4 +1,4 @@
-# mySQLtoes
+# mySQLtoes 1.2
 Handy MySQL to Elasticsearch tool in PHP
 
 mySQLtoes is the implementation of Elasticsearch PHP client as a configurable tool to select and insert mySQL databases tables into ES.
@@ -18,7 +18,7 @@ to use this script make sure you are having php >= 5.3 installed on your machine
  3. execute run.php in command line.
 
 
-I'll be adding more functionalities such as custom mapping and ... to it in near future if I can manage my time.
+I'll be adding more functions such as custom mapping and ... to it in near future if I can manage my time.
 
 I hope it can be helpful for some of you ;)
 Mahdi

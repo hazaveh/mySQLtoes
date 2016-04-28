@@ -36,6 +36,13 @@ class convertAgent
             }
         }
 
+        if (strlen(DB_TABLE) == 0) {
+            echo PHP_EOL . $this->colors->
+                getColoredString("Database table is not defined. Please check the Config.php file.",
+                    'red') . PHP_EOL;
+            die();
+        }
+
         try {
             $this->database = new medoo([
                 'database_type' => 'mysql',
@@ -65,7 +72,7 @@ class convertAgent
     public function understand()
     {
         echo PHP_EOL . $this->colors->
-            getColoredString('mySQLtoes 1.1', 'green')
+            getColoredString('mySQLtoes 1.2', 'green')
             . PHP_EOL;
         sleep(1);
         echo $this->colors->
